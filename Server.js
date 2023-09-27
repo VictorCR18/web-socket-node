@@ -14,12 +14,12 @@ const server = net.createServer((socket) => {
   socket.on('data', (data) => {
     const mensagem = data.toString().trim(); // Converter os dados em uma string e remover espaços em branco
 
-    // Verificar se a mensagem começa com "CALCULAR IMC"
+    // Verifica se a mensagem começa com "CALCULAR IMC"
     if (mensagem.startsWith('CALCULAR IMC')) {
-      // Dividir a mensagem em partes separadas por espaço
+      // Divide a mensagem em partes separadas por espaço
       const partes = mensagem.split(' ');
 
-      // Verificar se existem duas partes (CALCULAR IMC <peso> <altura>)
+      // Verifica se existem duas partes (CALCULAR IMC <peso> <altura>)
       if (partes.length === 4) {
         const peso = parseFloat(partes[2]);
         const altura = parseFloat(partes[3]);
