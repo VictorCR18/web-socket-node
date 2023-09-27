@@ -6,7 +6,7 @@ function calcularIMC(peso, altura) {
   return (peso / (altura * altura)).toFixed(2);
 }
 
-// Crie um servidor TCP
+// Cria um servidor TCP
 const server = net.createServer((socket) => {
   // Este callback será chamado sempre que um cliente se conectar
 
@@ -53,7 +53,7 @@ const server = net.createServer((socket) => {
 const port = 3000;
 const host = '192.168.0.7';
 
-// Inicie o servidor na porta e endereço especificados
+// Inicia o servidor na porta e endereço especificados
 server.listen(port, host, () => {
   console.log(`Servidor de soquete está ouvindo em ${host}:${port}`);
 });
