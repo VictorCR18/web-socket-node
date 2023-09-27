@@ -3,7 +3,7 @@ const readline = require('readline');
 
 // Define a porta e o endereço IP do servidor
 const port = 3000;
-const host = '192.168.0.7';
+const host = ' 172.25.254.233';
 
 // Função para configurar a interação com o servidor
 function iniciarInteracao() {
